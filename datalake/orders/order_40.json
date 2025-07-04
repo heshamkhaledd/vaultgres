@@ -1,13 +1,18 @@
 {
-    "user_id": 16,
-    "order_date": "2024-04-30T12:20:34.490381",
-    "status": "delivered",
-    "total": 131.96,
+    "user_id": 17,
+    "order_date": "2023-10-20T18:09:19.515152",
+    "status": "out of stock",
+    "total": 0,
     "items": [
         {
-            "product_name": "Beat",
-            "requested_quantity": 4,
-            "unit_price": 32.99
+            "product_name": "Method",
+            "requested_quantity": 5,
+            "unit_price": 63.06
+        },
+        {
+            "product_name": "Assume",
+            "requested_quantity": 5,
+            "unit_price": 12.12
         }
     ]
 }

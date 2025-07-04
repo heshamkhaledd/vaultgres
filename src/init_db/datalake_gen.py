@@ -104,7 +104,7 @@ for user in users:
             "user_id": user["id"],
             "order_date": fake.date_time_between(start_date='-2y', end_date='now').isoformat(),
             "status": "out of stock" if out_of_stock else "delivered",
-            "total": None if out_of_stock else round(order_total, 2),
+            "total": 0 if out_of_stock else round(order_total, 2),
             "items": order_items
         }
 

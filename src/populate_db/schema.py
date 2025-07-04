@@ -28,7 +28,7 @@ class Order(Base):
     __tablename__ = 'orders'
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    user_id = Column(Integer, ForeignKey('users.id'), ondelete="CASCADE")
+    user_id = Column(Integer, ForeignKey('users.id', ondelete="CASCADE"))
     order_date = Column(DateTime)
     status = Column(String)
     total = Column(Numeric)
@@ -39,8 +39,8 @@ class OrderItem(Base):
     __tablename__ = 'order_items'
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    order_id = Column(Integer, ForeignKey('orders.id'), ondelete="CASCADE")
-    product_name = Column(String, ForeignKey('inventory.product_name'), ondelete="CASCADE")
+    order_id = Column(Integer, ForeignKey('orders.id', ondelete="CASCADE"))
+    product_name = Column(String, ForeignKey('inventory.product_name', ondelete="CASCADE"))
     requested_quantity = Column(Integer)
     unit_price = Column(Numeric)
     order = relationship("Order", back_populates="items")

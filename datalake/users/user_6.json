@@ -1,16 +1,16 @@
 {
     "id": 6,
-    "first_name": "Ethan",
-    "last_name": "Ferrell",
-    "email": "clementspedro@example.net",
-    "phone": "890-410-9459",
-    "password": "(4BO4cNoMEF!",
+    "first_name": "Joseph",
+    "last_name": "Fisher",
+    "email": "brownsarah@example.com",
+    "phone": "+1-753-918-6128x748",
+    "password": "ukevWbSpS*7U",
     "address": {
-        "street": "384 Amanda Vista",
-        "city": "Lanechester",
-        "state": "Connecticut",
-        "zip": "11553"
+        "street": "24448 Allen Squares",
+        "city": "Cortezborough",
+        "state": "North Dakota",
+        "zip": "21320"
     },
-    "date_of_birth": "1955-07-12",
-    "created_at": "1986-02-21T18:06:08.779895"
+    "date_of_birth": "1967-04-19",
+    "created_at": "2000-01-19T09:55:23.816234"
 }

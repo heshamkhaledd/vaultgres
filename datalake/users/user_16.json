@@ -1,16 +1,16 @@
 {
     "id": 16,
-    "first_name": "Richard",
-    "last_name": "Chase",
-    "email": "ncruz@example.org",
-    "phone": "2272590560",
-    "password": "+%JAhDsa5Q3p",
+    "first_name": "Gregory",
+    "last_name": "Dixon",
+    "email": "leah24@example.com",
+    "phone": "299-445-3627x3020",
+    "password": "8+gBU*fXa383",
     "address": {
-        "street": "43932 Davis Field",
-        "city": "Port Ryanland",
-        "state": "Kansas",
-        "zip": "17698"
+        "street": "7733 Daniel Garden",
+        "city": "Lake Jason",
+        "state": "Virginia",
+        "zip": "50493"
     },
-    "date_of_birth": "1961-12-25",
-    "created_at": "2000-10-28T15:13:47.109164"
+    "date_of_birth": "1962-12-13",
+    "created_at": "1975-01-19T17:13:56.937469"
 }

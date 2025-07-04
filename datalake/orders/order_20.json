@@ -1,13 +1,23 @@
 {
     "user_id": 8,
-    "order_date": "2023-08-03T04:49:28.762439",
+    "order_date": "2025-07-01T18:01:00.379565",
     "status": "delivered",
-    "total": 22.64,
+    "total": 308.42,
     "items": [
         {
-            "product_name": "Develop",
+            "product_name": "Outside",
+            "requested_quantity": 3,
+            "unit_price": 78.85
+        },
+        {
+            "product_name": "Let",
+            "requested_quantity": 2,
+            "unit_price": 14.0
+        },
+        {
+            "product_name": "Bed",
             "requested_quantity": 1,
-            "unit_price": 22.64
+            "unit_price": 43.87
         }
     ]
 }

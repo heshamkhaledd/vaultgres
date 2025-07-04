@@ -1,16 +1,16 @@
 {
     "id": 15,
-    "first_name": "Annette",
-    "last_name": "Benson",
-    "email": "brian10@example.org",
-    "phone": "480-515-0174",
-    "password": "2&j7f*Fr88yn",
+    "first_name": "David",
+    "last_name": "Edwards",
+    "email": "madisonroach@example.org",
+    "phone": "414.574.1659x680",
+    "password": "P97ala&^*&YL",
     "address": {
-        "street": "377 Johnny Union Suite 017",
-        "city": "Port Samuel",
-        "state": "Oklahoma",
-        "zip": "00801"
+        "street": "92037 Lucas Field Suite 153",
+        "city": "Tarafort",
+        "state": "New York",
+        "zip": "60296"
     },
-    "date_of_birth": "1993-06-02",
-    "created_at": "1982-07-13T07:22:27.555719"
+    "date_of_birth": "1948-03-06",
+    "created_at": "2019-10-04T01:36:55.468951"
 }

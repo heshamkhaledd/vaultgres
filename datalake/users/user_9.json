@@ -1,16 +1,16 @@
 {
     "id": 9,
-    "first_name": "Tina",
-    "last_name": "Evans",
-    "email": "chadfowler@example.com",
-    "phone": "9913708501",
-    "password": "8)9wJXwZTn&X",
+    "first_name": "Victor",
+    "last_name": "Mccarthy",
+    "email": "waltergutierrez@example.net",
+    "phone": "(236)271-9617x01909",
+    "password": "#0UFFLmxC)87",
     "address": {
-        "street": "260 Robert Forges",
-        "city": "Watsonville",
-        "state": "Kansas",
-        "zip": "26434"
+        "street": "70433 Kyle Views Apt. 901",
+        "city": "Kristachester",
+        "state": "California",
+        "zip": "44624"
     },
-    "date_of_birth": "1962-06-02",
-    "created_at": "1979-04-26T18:14:02.803482"
+    "date_of_birth": "1958-05-10",
+    "created_at": "1997-12-02T09:43:44.661837"
 }

@@ -1,13 +1,18 @@
 {
-    "user_id": 12,
-    "order_date": "2025-02-19T05:03:19.614055",
-    "status": "out of stock",
-    "total": null,
+    "user_id": 11,
+    "order_date": "2023-08-01T11:24:50.503580",
+    "status": "delivered",
+    "total": 193.68,
     "items": [
         {
-            "product_name": "Develop",
+            "product_name": "Figure",
             "requested_quantity": 1,
-            "unit_price": 22.64
+            "unit_price": 47.4
+        },
+        {
+            "product_name": "Item",
+            "requested_quantity": 3,
+            "unit_price": 48.76
         }
     ]
 }

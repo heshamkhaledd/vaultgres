@@ -1,16 +1,16 @@
 {
     "id": 1,
-    "first_name": "Shane",
-    "last_name": "Berry",
-    "email": "smithhannah@example.org",
-    "phone": "(938)345-4530",
-    "password": "dM_5SydGU(Zf",
+    "first_name": "Juan",
+    "last_name": "Friedman",
+    "email": "andreajenkins@example.net",
+    "phone": "796.565.5910x249",
+    "password": "D^!gHK#o)1OI",
     "address": {
-        "street": "6852 Case Crescent Apt. 122",
-        "city": "Timothyburgh",
-        "state": "New Jersey",
-        "zip": "69496"
+        "street": "38544 Scott Lake Suite 327",
+        "city": "Esparzaport",
+        "state": "Arkansas",
+        "zip": "05617"
     },
-    "date_of_birth": "2003-05-24",
-    "created_at": "1971-12-11T04:02:16.679562"
+    "date_of_birth": "1957-10-11",
+    "created_at": "2021-09-05T08:18:13.891586"
 }

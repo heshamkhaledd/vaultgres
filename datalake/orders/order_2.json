@@ -1,23 +1,13 @@
 {
     "user_id": 1,
-    "order_date": "2023-07-20T23:04:49.909787",
+    "order_date": "2024-08-20T02:25:15.621701",
     "status": "delivered",
-    "total": 611.59,
+    "total": 126.12,
     "items": [
         {
-            "product_name": "Remember",
-            "requested_quantity": 3,
-            "unit_price": 89.34
-        },
-        {
-            "product_name": "Rest",
-            "requested_quantity": 5,
-            "unit_price": 25.16
-        },
-        {
-            "product_name": "Moment",
-            "requested_quantity": 3,
-            "unit_price": 72.59
+            "product_name": "Method",
+            "requested_quantity": 2,
+            "unit_price": 63.06
         }
     ]
 }

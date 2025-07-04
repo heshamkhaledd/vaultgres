@@ -1,18 +1,13 @@
 {
     "user_id": 2,
-    "order_date": "2025-05-22T13:15:15.554226",
-    "status": "out of stock",
-    "total": null,
+    "order_date": "2023-07-20T02:28:21.232112",
+    "status": "delivered",
+    "total": 27.89,
     "items": [
         {
-            "product_name": "Drug",
-            "requested_quantity": 5,
-            "unit_price": 33.96
-        },
-        {
-            "product_name": "Moment",
-            "requested_quantity": 5,
-            "unit_price": 72.59
+            "product_name": "Night",
+            "requested_quantity": 1,
+            "unit_price": 27.89
         }
     ]
 }

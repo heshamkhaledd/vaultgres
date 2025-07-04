@@ -1,16 +1,16 @@
 {
     "id": 12,
-    "first_name": "Anthony",
-    "last_name": "Knight",
-    "email": "erichardson@example.org",
-    "phone": "(587)878-1882x478",
-    "password": "@$5Lv@5DretN",
+    "first_name": "Sara",
+    "last_name": "Matthews",
+    "email": "stevenmiller@example.org",
+    "phone": "+1-737-402-3174",
+    "password": "7q5U7e9d6(@F",
     "address": {
-        "street": "6695 Conner Centers Suite 215",
-        "city": "North Lisa",
-        "state": "North Carolina",
-        "zip": "96280"
+        "street": "2097 Steven Village",
+        "city": "Lake Lukechester",
+        "state": "Ohio",
+        "zip": "41735"
     },
-    "date_of_birth": "1966-01-05",
-    "created_at": "1983-01-17T05:57:44.405822"
+    "date_of_birth": "1994-09-21",
+    "created_at": "1980-02-07T01:44:19.346405"
 }

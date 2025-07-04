@@ -1,16 +1,16 @@
 {
     "id": 11,
-    "first_name": "Heather",
-    "last_name": "Li",
-    "email": "alexanderramirez@example.com",
-    "phone": "569-253-2791x875",
-    "password": "4jElO#eg*4qY",
+    "first_name": "Kevin",
+    "last_name": "Moore",
+    "email": "drubio@example.org",
+    "phone": "+1-651-960-2821",
+    "password": "CIb7sKcG#LZG",
     "address": {
-        "street": "15622 Burnett Villages",
-        "city": "South Teresa",
-        "state": "Nevada",
-        "zip": "09030"
+        "street": "452 Steven Streets Apt. 365",
+        "city": "West Ryan",
+        "state": "Arkansas",
+        "zip": "84051"
     },
-    "date_of_birth": "1996-10-30",
-    "created_at": "1981-03-15T07:04:39.785427"
+    "date_of_birth": "1963-05-19",
+    "created_at": "1993-02-18T04:06:03.184058"
 }

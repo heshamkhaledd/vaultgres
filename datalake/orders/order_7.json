@@ -1,13 +1,18 @@
 {
     "user_id": 3,
-    "order_date": "2024-06-27T06:25:59.136749",
+    "order_date": "2024-02-27T21:55:06.901595",
     "status": "delivered",
-    "total": 387.35,
+    "total": 215.73,
     "items": [
         {
-            "product_name": "She",
-            "requested_quantity": 5,
-            "unit_price": 77.47
+            "product_name": "Wife",
+            "requested_quantity": 1,
+            "unit_price": 36.39
+        },
+        {
+            "product_name": "Kid",
+            "requested_quantity": 3,
+            "unit_price": 59.78
         }
     ]
 }

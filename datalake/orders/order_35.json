@@ -1,13 +1,13 @@
 {
     "user_id": 14,
-    "order_date": "2023-11-19T02:16:21.321059",
+    "order_date": "2024-07-11T02:53:06.192841",
     "status": "delivered",
-    "total": 33.96,
+    "total": 27.89,
     "items": [
         {
-            "product_name": "Drug",
+            "product_name": "Night",
             "requested_quantity": 1,
-            "unit_price": 33.96
+            "unit_price": 27.89
         }
     ]
 }

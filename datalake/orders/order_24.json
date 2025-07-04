@@ -1,13 +1,13 @@
 {
-    "user_id": 9,
-    "order_date": "2024-08-30T01:41:34.305455",
+    "user_id": 10,
+    "order_date": "2024-07-01T14:33:47.536858",
     "status": "delivered",
-    "total": 336.44,
+    "total": 97.71,
     "items": [
         {
-            "product_name": "Foreign",
-            "requested_quantity": 4,
-            "unit_price": 84.11
+            "product_name": "Agency",
+            "requested_quantity": 3,
+            "unit_price": 32.57
         }
     ]
 }

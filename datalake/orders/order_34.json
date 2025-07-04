@@ -1,18 +1,18 @@
 {
     "user_id": 14,
-    "order_date": "2024-03-17T02:20:13.706900",
+    "order_date": "2023-09-14T01:06:34.708498",
     "status": "out of stock",
-    "total": null,
+    "total": 0,
     "items": [
         {
-            "product_name": "Lawyer",
-            "requested_quantity": 5,
-            "unit_price": 85.9
+            "product_name": "Night",
+            "requested_quantity": 3,
+            "unit_price": 27.89
         },
         {
-            "product_name": "Remember",
-            "requested_quantity": 3,
-            "unit_price": 89.34
+            "product_name": "Goal",
+            "requested_quantity": 2,
+            "unit_price": 57.99
         }
     ]
 }

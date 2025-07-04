@@ -1,13 +1,13 @@
 {
     "user_id": 7,
-    "order_date": "2024-07-14T07:47:24.653023",
-    "status": "delivered",
-    "total": 60.92,
+    "order_date": "2024-10-09T06:12:41.109831",
+    "status": "out of stock",
+    "total": 0,
     "items": [
         {
-            "product_name": "Hit",
-            "requested_quantity": 1,
-            "unit_price": 60.92
+            "product_name": "Method",
+            "requested_quantity": 4,
+            "unit_price": 63.06
         }
     ]
 }

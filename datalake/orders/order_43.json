@@ -1,13 +1,23 @@
 {
-    "user_id": 17,
-    "order_date": "2024-05-15T08:07:49.742505",
+    "user_id": 18,
+    "order_date": "2024-12-14T10:06:12.917592",
     "status": "out of stock",
-    "total": null,
+    "total": 0,
     "items": [
         {
-            "product_name": "Carry",
+            "product_name": "Wife",
+            "requested_quantity": 3,
+            "unit_price": 36.39
+        },
+        {
+            "product_name": "Avoid",
+            "requested_quantity": 1,
+            "unit_price": 81.36
+        },
+        {
+            "product_name": "Method",
             "requested_quantity": 4,
-            "unit_price": 95.88
+            "unit_price": 63.06
         }
     ]
 }

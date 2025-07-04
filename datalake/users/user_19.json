@@ -1,16 +1,16 @@
 {
     "id": 19,
-    "first_name": "Sean",
-    "last_name": "Griffith",
-    "email": "gonzalezelijah@example.org",
-    "phone": "602.854.0442x851",
-    "password": "@tSBIhwahQ61",
+    "first_name": "Joseph",
+    "last_name": "Adams",
+    "email": "juliacooley@example.com",
+    "phone": "+1-268-806-5382",
+    "password": "O7%m0Ie2hy+w",
     "address": {
-        "street": "94231 Sydney Shores",
-        "city": "Owenshaven",
-        "state": "Mississippi",
-        "zip": "87376"
+        "street": "9694 Teresa Summit",
+        "city": "South Kelseyton",
+        "state": "New Mexico",
+        "zip": "04970"
     },
-    "date_of_birth": "1986-12-22",
-    "created_at": "1982-03-08T21:47:12.946186"
+    "date_of_birth": "1971-02-12",
+    "created_at": "1986-12-22T05:16:16.325429"
 }

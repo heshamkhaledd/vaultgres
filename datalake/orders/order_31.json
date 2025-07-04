@@ -1,18 +1,18 @@
 {
-    "user_id": 13,
-    "order_date": "2023-12-12T14:50:28.065986",
-    "status": "delivered",
-    "total": 150.17,
+    "user_id": 12,
+    "order_date": "2024-02-03T16:16:03.805940",
+    "status": "out of stock",
+    "total": 0,
     "items": [
         {
-            "product_name": "Life",
-            "requested_quantity": 1,
-            "unit_price": 85.41
+            "product_name": "Amount",
+            "requested_quantity": 4,
+            "unit_price": 50.8
         },
         {
-            "product_name": "One",
-            "requested_quantity": 4,
-            "unit_price": 16.19
+            "product_name": "Change",
+            "requested_quantity": 5,
+            "unit_price": 27.43
         }
     ]
 }

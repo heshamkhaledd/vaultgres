@@ -1,16 +1,16 @@
 {
     "id": 8,
-    "first_name": "Benjamin",
-    "last_name": "George",
-    "email": "christopher07@example.com",
-    "phone": "001-654-842-8024x987",
-    "password": "@1*6ZKPe7UB6",
+    "first_name": "William",
+    "last_name": "Sharp",
+    "email": "brownbradley@example.net",
+    "phone": "+1-941-208-7479x426",
+    "password": "^KXRbshmsL3^",
     "address": {
-        "street": "773 Sharon Key",
-        "city": "Port Christine",
-        "state": "Connecticut",
-        "zip": "75454"
+        "street": "3186 Nathan Walk",
+        "city": "North Alexaville",
+        "state": "Louisiana",
+        "zip": "34421"
     },
-    "date_of_birth": "1967-01-31",
-    "created_at": "2000-10-17T18:59:49.425826"
+    "date_of_birth": "1964-04-08",
+    "created_at": "1975-08-22T17:57:58.953428"
 }

@@ -1,18 +1,13 @@
 {
-    "user_id": 8,
-    "order_date": "2023-07-28T12:43:29.382105",
-    "status": "out of stock",
-    "total": null,
+    "user_id": 9,
+    "order_date": "2025-06-13T19:34:48.625907",
+    "status": "delivered",
+    "total": 27.43,
     "items": [
         {
-            "product_name": "Something",
-            "requested_quantity": 2,
-            "unit_price": 24.84
-        },
-        {
-            "product_name": "Moment",
-            "requested_quantity": 3,
-            "unit_price": 72.59
+            "product_name": "Change",
+            "requested_quantity": 1,
+            "unit_price": 27.43
         }
     ]
 }

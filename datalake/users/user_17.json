@@ -1,16 +1,16 @@
 {
     "id": 17,
-    "first_name": "Eugene",
-    "last_name": "Kelly",
-    "email": "ephillips@example.org",
-    "phone": "9094266516",
-    "password": "sGo6W^VrW!%9",
+    "first_name": "Tom",
+    "last_name": "Burgess",
+    "email": "steven83@example.com",
+    "phone": "(302)206-4430x32283",
+    "password": "%q$HmCRo7$Xf",
     "address": {
-        "street": "448 Amber Plains Suite 062",
-        "city": "Lake Thomas",
-        "state": "New York",
-        "zip": "15305"
+        "street": "469 Teresa Fall Suite 078",
+        "city": "Nguyentown",
+        "state": "Oregon",
+        "zip": "95843"
     },
-    "date_of_birth": "1981-02-16",
-    "created_at": "1995-02-12T23:38:54.595833"
+    "date_of_birth": "1976-07-07",
+    "created_at": "1997-07-21T14:15:59.309450"
 }

@@ -1,13 +1,23 @@
 {
     "user_id": 10,
-    "order_date": "2024-09-05T03:11:43.812097",
+    "order_date": "2023-07-22T20:40:53.960416",
     "status": "delivered",
-    "total": 154.77,
+    "total": 327.8,
     "items": [
         {
-            "product_name": "Throw",
+            "product_name": "Wear",
             "requested_quantity": 3,
-            "unit_price": 51.59
+            "unit_price": 40.55
+        },
+        {
+            "product_name": "Fire",
+            "requested_quantity": 4,
+            "unit_price": 35.92
+        },
+        {
+            "product_name": "Guy",
+            "requested_quantity": 1,
+            "unit_price": 62.47
         }
     ]
 }

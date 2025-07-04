@@ -1,16 +1,16 @@
 {
     "id": 7,
-    "first_name": "Michelle",
-    "last_name": "Melton",
-    "email": "joshua15@example.com",
-    "phone": "001-898-528-1384x91697",
-    "password": "+kTSSeMdh@p8",
+    "first_name": "Sharon",
+    "last_name": "Williams",
+    "email": "kyle43@example.org",
+    "phone": "495-720-9319",
+    "password": "+)9wbe2zB_$X",
     "address": {
-        "street": "55707 Smith Field Suite 400",
-        "city": "Brianmouth",
-        "state": "Nebraska",
-        "zip": "70040"
+        "street": "644 Barrett Inlet Apt. 616",
+        "city": "Sarahview",
+        "state": "Michigan",
+        "zip": "14571"
     },
-    "date_of_birth": "1951-04-19",
-    "created_at": "1977-11-17T18:05:33.167545"
+    "date_of_birth": "1998-10-26",
+    "created_at": "2002-08-28T20:54:13.013739"
 }

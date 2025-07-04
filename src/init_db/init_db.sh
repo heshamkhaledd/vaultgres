@@ -1,13 +1,5 @@
 #!/bin/bash
   
-# Clean up existing database and user
-if [[ "$1" == "--clean" || "$1" == "--clear" || "$1" == "-c" ]]; then
-  echo "Cleaning up existing database and user..."
-  sudo -u postgres psql -c "DROP DATABASE IF EXISTS vaultgres;" > /dev/null
-  sudo -u postgres psql -c "DROP ROLE IF EXISTS db_root;" > /dev/null
-  exit 0
-fi
-
 # Read database configuration from db_config.json file
 if [ -f "db_config.json" ]; then
   echo "Reading database configuration from db_config.json..."
@@ -17,6 +9,22 @@ if [ -f "db_config.json" ]; then
 else
   echo "Error: db_config.json file not found."
   exit 1
+fi
+
+# Clean up existing database and user
+if [[ "$1" == "--clean" || "$1" == "--clear" || "$1" == "-c" ]]; then
+  echo "Cleaning up existing database and user..."
+  # Terminate active connections to vaultgres (except current session)
+  sudo -u postgres psql -d postgres -c "
+  SELECT pg_terminate_backend(pid)
+  FROM pg_stat_activity
+  WHERE datname = '${DB_NAME}'
+    AND pid <> pg_backend_pid();" > /dev/null
+
+  # Drop database and user
+  sudo -u postgres psql -d postgres -c "DROP DATABASE IF EXISTS ${DB_NAME};" > /dev/null
+  sudo -u postgres psql -d postgres -c "DROP ROLE IF EXISTS ${DB_ADMIN_USER};" > /dev/null
+  exit 0
 fi
 
 # Check if required variables are set

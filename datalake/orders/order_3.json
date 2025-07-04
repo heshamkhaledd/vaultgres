@@ -1,23 +1,13 @@
 {
-    "user_id": 1,
-    "order_date": "2025-02-22T19:49:10.875886",
-    "status": "out of stock",
-    "total": null,
+    "user_id": 2,
+    "order_date": "2024-03-01T03:27:04.450175",
+    "status": "delivered",
+    "total": 119.56,
     "items": [
         {
-            "product_name": "Recognize",
-            "requested_quantity": 3,
-            "unit_price": 73.24
-        },
-        {
-            "product_name": "Rest",
+            "product_name": "Kid",
             "requested_quantity": 2,
-            "unit_price": 25.16
-        },
-        {
-            "product_name": "Moment",
-            "requested_quantity": 2,
-            "unit_price": 72.59
+            "unit_price": 59.78
         }
     ]
 }

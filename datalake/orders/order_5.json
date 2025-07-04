@@ -1,23 +1,18 @@
 {
     "user_id": 2,
-    "order_date": "2024-03-11T10:45:17.719739",
+    "order_date": "2024-01-12T21:39:43.058186",
     "status": "delivered",
-    "total": 639.15,
+    "total": 154.95,
     "items": [
         {
-            "product_name": "Stay",
-            "requested_quantity": 4,
-            "unit_price": 45.18
+            "product_name": "Day",
+            "requested_quantity": 3,
+            "unit_price": 10.4
         },
         {
-            "product_name": "One",
+            "product_name": "Spend",
             "requested_quantity": 5,
-            "unit_price": 16.19
-        },
-        {
-            "product_name": "Reality",
-            "requested_quantity": 4,
-            "unit_price": 94.37
+            "unit_price": 24.75
         }
     ]
 }
