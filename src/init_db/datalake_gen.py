@@ -120,6 +120,6 @@ for user in users:
         order_index += 1
 
 # Summary Log
-print(f"✅ Created {len(users)} users in: {users_dir}")
-print(f"✅ Created {len(product_names)} items in: {inventory_dir}")
-print(f"✅ Created {order_index - 1} orders in: {orders_dir}")
+print(f"Created {len(users)} users in: {users_dir}")
+print(f"Created {len(product_names)} items in: {inventory_dir}")
+print(f"Created {order_index - 1} orders in: {orders_dir}")
