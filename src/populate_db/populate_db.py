@@ -7,6 +7,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import IntegrityError
 from psycopg2.errors import UniqueViolation
+import bcrypt
 import traceback
 from schema import *
 
@@ -58,12 +59,20 @@ class Client():
         self.session.close()
         self.engine.dispose()
 
+    @staticmethod
     def _dump_postgres_logs(self, message):
         with open('vaultgres.log', 'a') as log_file:
             log_file.write(f"{message}\n")
 
+    @staticmethod
+    def _hash_password(raw_password: str) -> str:
+        salt = bcrypt.gensalt()
+        hashed = bcrypt.hashpw(raw_password.encode('utf-8'), salt)
+        return hashed.decode('utf-8')
+
     def populate_users(self, users_data):
         for user in users_data.values():
+            user['password'] = self._hash_password(user['password'])
             new_user = User(**user)
             self.session.add(new_user)
             try:

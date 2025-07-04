@@ -99,11 +99,12 @@ for user in users:
                 order_total += req_quantity * product["unit_price"]
 
             order_items.append(item_entry)
-
+            
+        status_options = ['pending', 'transporting', 'delivered', 'cancelled']
         order = {
             "user_id": user["id"],
             "order_date": fake.date_time_between(start_date='-2y', end_date='now').isoformat(),
-            "status": "out of stock" if out_of_stock else "delivered",
+            "status": "out of stock" if out_of_stock else random.choice(status_options),
             "total": 0 if out_of_stock else round(order_total, 2),
             "items": order_items
         }

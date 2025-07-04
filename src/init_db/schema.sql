@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS orders (
     id SERIAL PRIMARY KEY,
     user_id INT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     order_date TIMESTAMP NOT NULL,
-    status TEXT CHECK (status IN ('pending', 'shipped', 'delivered', 'cancelled', 'out of stock')),
+    status TEXT CHECK (status IN ('pending', 'transporting', 'delivered', 'cancelled', 'out of stock')),
     total NUMERIC(10, 2) NOT NULL
 );
 
