@@ -14,16 +14,36 @@ fi
 # Clean up existing database and user
 if [[ "$1" == "--clean" || "$1" == "--clear" || "$1" == "-c" ]]; then
   echo "Cleaning up existing database and user..."
-  # Terminate active connections to vaultgres (except current session)
-  sudo -u postgres psql -d postgres -c "
-  SELECT pg_terminate_backend(pid)
-  FROM pg_stat_activity
-  WHERE datname = '${DB_NAME}'
-    AND pid <> pg_backend_pid();" > /dev/null
 
-  # Drop database and user
+  # Terminate active connections to the database (except current session)
+  sudo -u postgres psql -d postgres -c "
+    SELECT pg_terminate_backend(pid)
+    FROM pg_stat_activity
+    WHERE datname = '${DB_NAME}'
+      AND pid <> pg_backend_pid();" > /dev/null
+
+  # Drop the database
   sudo -u postgres psql -d postgres -c "DROP DATABASE IF EXISTS ${DB_NAME};" > /dev/null
+
+  # Find all login roles excluding postgres and the admin user
+  ROLES_TO_DROP=$(sudo -u postgres psql -tAc "
+    SELECT rolname FROM pg_roles
+    WHERE rolcanlogin
+      AND rolname NOT IN ('postgres', '${DB_ADMIN_USER}');"
+    )
+
+  # Reassign ownership and drop roles
+  for ROLE in $ROLES_TO_DROP; do
+    echo "Dropping user: $ROLE"
+    sudo -u postgres psql -d postgres -c "REASSIGN OWNED BY ${ROLE} TO ${DB_ADMIN_USER};" > /dev/null
+    sudo -u postgres psql -d postgres -c "DROP OWNED BY ${ROLE};" > /dev/null
+    sudo -u postgres psql -d postgres -c "DROP ROLE IF EXISTS ${ROLE};" > /dev/null
+  done
+
+  # Drop the DB admin user
   sudo -u postgres psql -d postgres -c "DROP ROLE IF EXISTS ${DB_ADMIN_USER};" > /dev/null
+
+  echo "✅ Database and users cleaned."
   exit 0
 fi
 
@@ -36,7 +56,7 @@ fi
 # Check if admin user exists
 if ! sudo -u postgres psql -tAc "SELECT 1 FROM pg_roles WHERE rolname='${DB_ADMIN_USER}'" | grep -q 1; then
   echo "Creating database admin user..."
-  sudo -u postgres psql -c "CREATE ROLE ${DB_ADMIN_USER} WITH LOGIN PASSWORD '${DB_ADMIN_PASS}';" > /dev/null
+  sudo -u postgres psql -c "CREATE ROLE ${DB_ADMIN_USER} WITH LOGIN SUPERUSER PASSWORD '${DB_ADMIN_PASS}';" > /dev/null
 fi
 
 # Check if database exists
@@ -44,9 +64,6 @@ if ! sudo -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname='${DB_N
   echo "Creating database ${DB_NAME}..."
   sudo -u postgres psql -c "CREATE DATABASE ${DB_NAME} OWNER ${DB_ADMIN_USER};" > /dev/null
 fi
-
-# Grant all privileges on the database to the admin user
-sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE ${DB_NAME} TO ${DB_ADMIN_USER};" > /dev/null
 
 # Execute schema using psql
 if [ -f "schema.sql" ]; then
