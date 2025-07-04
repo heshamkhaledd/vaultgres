@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS users (
 -- INVENTORY TABLE
 CREATE TABLE IF NOT EXISTS inventory (
     id SERIAL PRIMARY KEY,
-    product_name TEXT UNIQUE NOT NULL,
+    product_name VARCHAR(255) UNIQUE NOT NULL,
     available_quantity INT NOT NULL,
     unit_price NUMERIC(10, 2) NOT NULL
 );
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS orders (
 CREATE TABLE IF NOT EXISTS order_items (
     id SERIAL PRIMARY KEY,
     order_id INT NOT NULL REFERENCES orders(id) ON DELETE CASCADE,
-    product_name TEXT NOT NULL REFERENCES inventory(product_name) ON DELETE CASCADE,
+    product_name VARCHAR(255) NOT NULL REFERENCES inventory(product_name) ON DELETE CASCADE,
     requested_quantity INT NOT NULL,
     unit_price NUMERIC(10, 2) NOT NULL
 );
