@@ -1,0 +1,16 @@
+{
+    "id": 19,
+    "first_name": "Sean",
+    "last_name": "Griffith",
+    "email": "gonzalezelijah@example.org",
+    "phone": "602.854.0442x851",
+    "password": "@tSBIhwahQ61",
+    "address": {
+        "street": "94231 Sydney Shores",
+        "city": "Owenshaven",
+        "state": "Mississippi",
+        "zip": "87376"
+    },
+    "date_of_birth": "1986-12-22",
+    "created_at": "1982-03-08T21:47:12.946186"
+}

@@ -1,0 +1,16 @@
+{
+    "id": 6,
+    "first_name": "Ethan",
+    "last_name": "Ferrell",
+    "email": "clementspedro@example.net",
+    "phone": "890-410-9459",
+    "password": "(4BO4cNoMEF!",
+    "address": {
+        "street": "384 Amanda Vista",
+        "city": "Lanechester",
+        "state": "Connecticut",
+        "zip": "11553"
+    },
+    "date_of_birth": "1955-07-12",
+    "created_at": "1986-02-21T18:06:08.779895"
+}

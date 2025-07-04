@@ -1,0 +1,18 @@
+{
+    "user_id": 3,
+    "order_date": "2023-10-30T23:31:42.335960",
+    "status": "delivered",
+    "total": 478.3,
+    "items": [
+        {
+            "product_name": "Reality",
+            "requested_quantity": 2,
+            "unit_price": 94.37
+        },
+        {
+            "product_name": "Behind",
+            "requested_quantity": 3,
+            "unit_price": 96.52
+        }
+    ]
+}

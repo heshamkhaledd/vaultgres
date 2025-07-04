@@ -1,0 +1,13 @@
+{
+    "user_id": 10,
+    "order_date": "2024-09-05T03:11:43.812097",
+    "status": "delivered",
+    "total": 154.77,
+    "items": [
+        {
+            "product_name": "Throw",
+            "requested_quantity": 3,
+            "unit_price": 51.59
+        }
+    ]
+}

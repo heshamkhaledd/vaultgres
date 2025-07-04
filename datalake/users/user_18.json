@@ -1,0 +1,16 @@
+{
+    "id": 18,
+    "first_name": "Patricia",
+    "last_name": "Rodriguez",
+    "email": "teresa30@example.com",
+    "phone": "+1-976-500-8338x9647",
+    "password": "f80BpEo0v+Tr",
+    "address": {
+        "street": "11769 Justin Hollow",
+        "city": "Port Sharon",
+        "state": "Hawaii",
+        "zip": "71738"
+    },
+    "date_of_birth": "1998-11-25",
+    "created_at": "1983-12-11T19:49:27.306595"
+}

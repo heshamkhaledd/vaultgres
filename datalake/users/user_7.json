@@ -1,0 +1,16 @@
+{
+    "id": 7,
+    "first_name": "Michelle",
+    "last_name": "Melton",
+    "email": "joshua15@example.com",
+    "phone": "001-898-528-1384x91697",
+    "password": "+kTSSeMdh@p8",
+    "address": {
+        "street": "55707 Smith Field Suite 400",
+        "city": "Brianmouth",
+        "state": "Nebraska",
+        "zip": "70040"
+    },
+    "date_of_birth": "1951-04-19",
+    "created_at": "1977-11-17T18:05:33.167545"
+}

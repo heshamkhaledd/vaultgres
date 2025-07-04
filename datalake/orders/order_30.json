@@ -1,0 +1,18 @@
+{
+    "user_id": 13,
+    "order_date": "2024-11-11T03:39:13.599813",
+    "status": "delivered",
+    "total": 652.47,
+    "items": [
+        {
+            "product_name": "Recognize",
+            "requested_quantity": 3,
+            "unit_price": 73.24
+        },
+        {
+            "product_name": "Successful",
+            "requested_quantity": 5,
+            "unit_price": 86.55
+        }
+    ]
+}

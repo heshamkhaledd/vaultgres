@@ -1,0 +1,16 @@
+{
+    "id": 11,
+    "first_name": "Heather",
+    "last_name": "Li",
+    "email": "alexanderramirez@example.com",
+    "phone": "569-253-2791x875",
+    "password": "4jElO#eg*4qY",
+    "address": {
+        "street": "15622 Burnett Villages",
+        "city": "South Teresa",
+        "state": "Nevada",
+        "zip": "09030"
+    },
+    "date_of_birth": "1996-10-30",
+    "created_at": "1981-03-15T07:04:39.785427"
+}

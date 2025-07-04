@@ -1,0 +1,18 @@
+{
+    "user_id": 1,
+    "order_date": "2025-06-01T04:52:52.034334",
+    "status": "delivered",
+    "total": 638.54,
+    "items": [
+        {
+            "product_name": "Can",
+            "requested_quantity": 3,
+            "unit_price": 51.98
+        },
+        {
+            "product_name": "Behind",
+            "requested_quantity": 5,
+            "unit_price": 96.52
+        }
+    ]
+}

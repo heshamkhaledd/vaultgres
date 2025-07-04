@@ -1,0 +1,23 @@
+{
+    "user_id": 18,
+    "order_date": "2023-11-03T19:26:54.394171",
+    "status": "out of stock",
+    "total": null,
+    "items": [
+        {
+            "product_name": "Rest",
+            "requested_quantity": 3,
+            "unit_price": 25.16
+        },
+        {
+            "product_name": "Hit",
+            "requested_quantity": 3,
+            "unit_price": 60.92
+        },
+        {
+            "product_name": "She",
+            "requested_quantity": 2,
+            "unit_price": 77.47
+        }
+    ]
+}

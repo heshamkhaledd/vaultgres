@@ -1,0 +1,23 @@
+{
+    "user_id": 19,
+    "order_date": "2025-03-27T19:37:04.697092",
+    "status": "out of stock",
+    "total": null,
+    "items": [
+        {
+            "product_name": "Foreign",
+            "requested_quantity": 5,
+            "unit_price": 84.11
+        },
+        {
+            "product_name": "Hit",
+            "requested_quantity": 2,
+            "unit_price": 60.92
+        },
+        {
+            "product_name": "Behind",
+            "requested_quantity": 1,
+            "unit_price": 96.52
+        }
+    ]
+}

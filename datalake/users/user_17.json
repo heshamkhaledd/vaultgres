@@ -1,0 +1,16 @@
+{
+    "id": 17,
+    "first_name": "Eugene",
+    "last_name": "Kelly",
+    "email": "ephillips@example.org",
+    "phone": "9094266516",
+    "password": "sGo6W^VrW!%9",
+    "address": {
+        "street": "448 Amber Plains Suite 062",
+        "city": "Lake Thomas",
+        "state": "New York",
+        "zip": "15305"
+    },
+    "date_of_birth": "1981-02-16",
+    "created_at": "1995-02-12T23:38:54.595833"
+}

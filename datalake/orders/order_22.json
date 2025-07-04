@@ -1,0 +1,23 @@
+{
+    "user_id": 8,
+    "order_date": "2024-01-27T08:20:54.179561",
+    "status": "delivered",
+    "total": 656.5,
+    "items": [
+        {
+            "product_name": "Carry",
+            "requested_quantity": 4,
+            "unit_price": 95.88
+        },
+        {
+            "product_name": "Drug",
+            "requested_quantity": 5,
+            "unit_price": 33.96
+        },
+        {
+            "product_name": "Throw",
+            "requested_quantity": 2,
+            "unit_price": 51.59
+        }
+    ]
+}

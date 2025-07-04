@@ -1,0 +1,13 @@
+{
+    "user_id": 8,
+    "order_date": "2023-08-03T04:49:28.762439",
+    "status": "delivered",
+    "total": 22.64,
+    "items": [
+        {
+            "product_name": "Develop",
+            "requested_quantity": 1,
+            "unit_price": 22.64
+        }
+    ]
+}

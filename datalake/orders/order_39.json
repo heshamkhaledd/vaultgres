@@ -1,0 +1,23 @@
+{
+    "user_id": 16,
+    "order_date": "2025-06-02T11:32:32.047024",
+    "status": "out of stock",
+    "total": null,
+    "items": [
+        {
+            "product_name": "Remember",
+            "requested_quantity": 2,
+            "unit_price": 89.34
+        },
+        {
+            "product_name": "Develop",
+            "requested_quantity": 3,
+            "unit_price": 22.64
+        },
+        {
+            "product_name": "Throw",
+            "requested_quantity": 4,
+            "unit_price": 51.59
+        }
+    ]
+}

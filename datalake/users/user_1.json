@@ -1,0 +1,16 @@
+{
+    "id": 1,
+    "first_name": "Shane",
+    "last_name": "Berry",
+    "email": "smithhannah@example.org",
+    "phone": "(938)345-4530",
+    "password": "dM_5SydGU(Zf",
+    "address": {
+        "street": "6852 Case Crescent Apt. 122",
+        "city": "Timothyburgh",
+        "state": "New Jersey",
+        "zip": "69496"
+    },
+    "date_of_birth": "2003-05-24",
+    "created_at": "1971-12-11T04:02:16.679562"
+}

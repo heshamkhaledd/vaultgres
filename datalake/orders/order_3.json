@@ -1,0 +1,23 @@
+{
+    "user_id": 1,
+    "order_date": "2025-02-22T19:49:10.875886",
+    "status": "out of stock",
+    "total": null,
+    "items": [
+        {
+            "product_name": "Recognize",
+            "requested_quantity": 3,
+            "unit_price": 73.24
+        },
+        {
+            "product_name": "Rest",
+            "requested_quantity": 2,
+            "unit_price": 25.16
+        },
+        {
+            "product_name": "Moment",
+            "requested_quantity": 2,
+            "unit_price": 72.59
+        }
+    ]
+}

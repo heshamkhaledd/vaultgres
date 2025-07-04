@@ -1,0 +1,13 @@
+{
+    "user_id": 17,
+    "order_date": "2024-05-15T08:07:49.742505",
+    "status": "out of stock",
+    "total": null,
+    "items": [
+        {
+            "product_name": "Carry",
+            "requested_quantity": 4,
+            "unit_price": 95.88
+        }
+    ]
+}

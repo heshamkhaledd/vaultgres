@@ -1,0 +1,13 @@
+{
+    "user_id": 16,
+    "order_date": "2023-10-16T12:01:21.511263",
+    "status": "delivered",
+    "total": 243.68,
+    "items": [
+        {
+            "product_name": "Hit",
+            "requested_quantity": 4,
+            "unit_price": 60.92
+        }
+    ]
+}

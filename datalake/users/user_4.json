@@ -1,0 +1,16 @@
+{
+    "id": 4,
+    "first_name": "Tyler",
+    "last_name": "Gordon",
+    "email": "jennifer98@example.org",
+    "phone": "(391)266-8619x152",
+    "password": ")LTPR6Kr2i6l",
+    "address": {
+        "street": "064 Andre Club",
+        "city": "Lake Michelle",
+        "state": "Kentucky",
+        "zip": "83219"
+    },
+    "date_of_birth": "1954-11-19",
+    "created_at": "1999-07-26T00:46:21.715450"
+}

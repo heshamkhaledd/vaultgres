@@ -1,0 +1,18 @@
+{
+    "user_id": 11,
+    "order_date": "2025-06-01T04:30:49.033835",
+    "status": "delivered",
+    "total": 145.93,
+    "items": [
+        {
+            "product_name": "Can",
+            "requested_quantity": 1,
+            "unit_price": 51.98
+        },
+        {
+            "product_name": "Certainly",
+            "requested_quantity": 1,
+            "unit_price": 93.95
+        }
+    ]
+}

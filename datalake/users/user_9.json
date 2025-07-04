@@ -1,0 +1,16 @@
+{
+    "id": 9,
+    "first_name": "Tina",
+    "last_name": "Evans",
+    "email": "chadfowler@example.com",
+    "phone": "9913708501",
+    "password": "8)9wJXwZTn&X",
+    "address": {
+        "street": "260 Robert Forges",
+        "city": "Watsonville",
+        "state": "Kansas",
+        "zip": "26434"
+    },
+    "date_of_birth": "1962-06-02",
+    "created_at": "1979-04-26T18:14:02.803482"
+}

@@ -1,0 +1,23 @@
+{
+    "user_id": 7,
+    "order_date": "2024-05-10T16:42:56.365031",
+    "status": "delivered",
+    "total": 242.48,
+    "items": [
+        {
+            "product_name": "Remember",
+            "requested_quantity": 2,
+            "unit_price": 89.34
+        },
+        {
+            "product_name": "Develop",
+            "requested_quantity": 1,
+            "unit_price": 22.64
+        },
+        {
+            "product_name": "Government",
+            "requested_quantity": 1,
+            "unit_price": 41.16
+        }
+    ]
+}

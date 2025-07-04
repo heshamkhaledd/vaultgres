@@ -1,0 +1,13 @@
+{
+    "user_id": 5,
+    "order_date": "2025-02-26T10:45:55.784171",
+    "status": "delivered",
+    "total": 77.47,
+    "items": [
+        {
+            "product_name": "She",
+            "requested_quantity": 1,
+            "unit_price": 77.47
+        }
+    ]
+}

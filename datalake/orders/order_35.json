@@ -1,0 +1,13 @@
+{
+    "user_id": 14,
+    "order_date": "2023-11-19T02:16:21.321059",
+    "status": "delivered",
+    "total": 33.96,
+    "items": [
+        {
+            "product_name": "Drug",
+            "requested_quantity": 1,
+            "unit_price": 33.96
+        }
+    ]
+}

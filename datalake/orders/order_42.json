@@ -1,0 +1,23 @@
+{
+    "user_id": 16,
+    "order_date": "2023-07-30T06:50:25.954332",
+    "status": "out of stock",
+    "total": null,
+    "items": [
+        {
+            "product_name": "Stay",
+            "requested_quantity": 2,
+            "unit_price": 45.18
+        },
+        {
+            "product_name": "Develop",
+            "requested_quantity": 1,
+            "unit_price": 22.64
+        },
+        {
+            "product_name": "Beat",
+            "requested_quantity": 1,
+            "unit_price": 32.99
+        }
+    ]
+}

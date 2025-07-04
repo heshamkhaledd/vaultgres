@@ -1,0 +1,18 @@
+{
+    "user_id": 13,
+    "order_date": "2023-12-12T14:50:28.065986",
+    "status": "delivered",
+    "total": 150.17,
+    "items": [
+        {
+            "product_name": "Life",
+            "requested_quantity": 1,
+            "unit_price": 85.41
+        },
+        {
+            "product_name": "One",
+            "requested_quantity": 4,
+            "unit_price": 16.19
+        }
+    ]
+}

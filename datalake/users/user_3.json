@@ -1,0 +1,16 @@
+{
+    "id": 3,
+    "first_name": "Abigail",
+    "last_name": "Smith",
+    "email": "candicenoble@example.com",
+    "phone": "574.204.6882x53573",
+    "password": "!7fLtv6qILaE",
+    "address": {
+        "street": "2951 Stark Underpass",
+        "city": "Lake Daniel",
+        "state": "Kentucky",
+        "zip": "47199"
+    },
+    "date_of_birth": "1996-04-06",
+    "created_at": "2017-10-31T07:09:08.329358"
+}
