@@ -13,9 +13,6 @@ restart:
 	docker compose down --remove-orphans
 	docker compose up --build
 
-prune:
-	docker system prune -f --volumes
-
 clean:
 	docker compose down --rmi all --volumes --remove-orphans
 	docker image prune -f
