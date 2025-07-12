@@ -37,7 +37,12 @@ os.makedirs(orders_dir, exist_ok=True)
 os.makedirs(inventory_dir, exist_ok=True)
 
 # Step 3: Generate items (inventory/products)
-product_names = list({fake.word().capitalize() for _ in range(30)})
+product_names = [
+    "Apple", "Banana", "Orange", "Grapes", "Strawberry", "Blueberry", "Watermelon", "Pineapple",
+    "Mango", "Peach", "Carrot", "Broccoli", "Spinach", "Potato", "Tomato", "Cucumber", "Lettuce",
+    "Onion", "Bell Pepper", "Celery", "Almonds", "Cashews", "Peanuts", "Walnuts", "Potato Chips",
+    "Pretzels", "Popcorn", "Granola Bar", "Chocolate Bar", "Trail Mix"
+]
 inventory_catalog = {}
 for i, name in enumerate(product_names, start=1):
     item = {
@@ -54,7 +59,6 @@ for i, name in enumerate(product_names, start=1):
 users = []
 for i in range(1, 21):
     user = {
-        "id": i,
         "first_name": fake.first_name(),
         "last_name": fake.last_name(),
         "email": fake.email(),
@@ -102,7 +106,7 @@ for user in users:
             
         status_options = ['pending', 'transporting', 'delivered', 'cancelled']
         order = {
-            "user_id": user["id"],
+            "user_id": random.randint(1, len(users)),
             "order_date": fake.date_time_between(start_date='-2y', end_date='now').isoformat(),
             "status": "out of stock" if out_of_stock else random.choice(status_options),
             "total": 0 if out_of_stock else round(order_total, 2),
