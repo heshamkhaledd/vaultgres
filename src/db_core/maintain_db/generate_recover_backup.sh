@@ -77,7 +77,7 @@ elif [[ "$db_recover" -eq 1 ]]; then
     echo "Using latest backup: $LATEST_BACKUP"
     # Terminating all connections to the database before recovery
     echo "Terminating existing connections to $DB_NAME..."
-    sudo -u postgres psql -d postgres -c "
+    psql -d postgres -c "
     SELECT pg_terminate_backend(pid)
     FROM pg_stat_activity
     WHERE datname = '${DB_NAME}' AND pid <> pg_backend_pid();" > /dev/null
@@ -87,8 +87,7 @@ elif [[ "$db_recover" -eq 1 ]]; then
     fi
     # Drop and recreate the database
     echo "Dropping and recreating the database '$DB_NAME'..."
-    pushd ../init_db/ > /dev/null
-    ./init_db.sh --recover
+    ./init_db_docker.sh --recover
     if [[ $? -ne 0 ]]; then
         echo "Failed to drop and recreate the database, Exiting..."
         exit 1

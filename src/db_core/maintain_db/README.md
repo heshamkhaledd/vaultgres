@@ -23,7 +23,7 @@ Scripts for ongoing database administration: user management, backup, and recove
 - Outputs instructions for restoring from backup.
 
 ## Options
-- Edit `db_config.json` to update connection details.
+- Edit `../db_config.json` to update connection details.
 
 ---
 

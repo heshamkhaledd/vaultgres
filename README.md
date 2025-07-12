@@ -1,6 +1,6 @@
 # Vaultgres
 
-**Vaultgres** is a hands-on PostgreSQL administration project for WSL (Ubuntu), simulating a production-ready database environment. It covers user management, security, backup, and recovery, ensuring data integrity and disaster recovery preparedness for real-world applications.
+**Vaultgres** is a hands-on PostgreSQL administration project simulating a production-ready database environment. It covers user management, security, backup, and recovery, ensuring data integrity and disaster recovery preparedness for real-world applications.
 
 ## Features
 - Automated database initialization and schema setup
@@ -8,55 +8,41 @@
 - Data population and simulation
 - Backup and recovery utilities
 - Modular, organized codebase
+- Dockerized for easy setup and deployment
 
 ## Directory Structure
+- db container
+   - [`src/db_core/init_db/`](./src/db_core/init_db): Database initialization scripts and schema
+   - [`src/db_core/maintain_db/`](./src/db_core/maintain_db): User management and backup scripts
+- populator container
+   - [`src/db_populate/`](./src/db_populate): Data population and schema utilities
+- [`docker-compose.yml`](./docker-compose.yml): Multi-container orchestration for the project
 
-- [`datalake/`](./datalake): Sample data for users, inventory, and orders (JSON format)
-- [`src/init_db/`](./src/init_db): Database initialization scripts and schema
-- [`src/maintain_db/`](./src/maintain_db): User management and backup scripts
-- [`src/populate_db/`](./src/populate_db): Data population and schema utilities
-- [`src/run.sh`](./src/run.sh): Main entrypoint for running the project
-
-## Quick Start
+## Quick Start (Docker)
 1. **Clone the repository**
    ```bash
    git clone <repo-url>
    cd vaultgres
    ```
-2. **Run Everything (All in One)**
-    ```bash
-    cd src/
-    ./run.sh
-    ```
-3. **Generate random datalake**
+2. **Start all services using Docker Compose**
    ```bash
-   cd init_db/
-   python3 datalake_gen.py
+   make up
    ```
-4. **Initialize DB**
-    ```bash
-    ./init_db.sh [options]
-    ```
-4. **Populate with sample data**
+   This will build and start the database and population services as defined in `docker-compose.yml`.
+
+3. **Stop all services**
    ```bash
-   cd ../populate_db
-   python3 populate_db.py
+   make down
    ```
-5. **Manage users and backups**
+4. **Cleanup Build**
    ```bash
-   cd ../maintain_db
-   ./add_user.sh [options]
-   ./generate_recover_backup.sh [options]
+   make clean
    ```
 
 ## Requirements
-- WSL (Ubuntu)
-- PostgreSQL
-- Python 3.x
-
-## Security & Recovery
-- All scripts are designed with security and disaster recovery in mind.
-- Backups are generated and can be restored easily.
+- Linux Based OS (Using WSL Ubunutu)
+- GNU Make (Using GNU Make 4.3)
+- Docker Engine (Using Docker version 28.3.2, build 578ccf6)
 
 ---
 

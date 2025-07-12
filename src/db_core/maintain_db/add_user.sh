@@ -54,32 +54,32 @@ if [[ "$ACCESS_LEVEL" != "admin" && "$ACCESS_LEVEL" != "user" ]]; then
 fi
 
 # Check if the database exists
-if ! sudo -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname='${DB_NAME}'" | grep -q 1; then
+if ! psql -tAc "SELECT 1 FROM pg_database WHERE datname='${DB_NAME}'" | grep -q 1; then
     echo "Error: Database '${DB_NAME}' does not exist."
     exit 1
 fi
 
 # Create the user with the specified password and access level
 # Check if the user exists
-USER_EXISTS=$(sudo -u postgres psql -tAc "SELECT 1 FROM pg_roles WHERE rolname='${DB_USER}'")
+USER_EXISTS=$(psql -tAc "SELECT 1 FROM pg_roles WHERE rolname='${DB_USER}'")
 
 if [[ "$USER_EXISTS" != "1" ]]; then
     echo "User '${DB_USER}' does not exist. Creating..."
-    sudo -u postgres psql -c "CREATE ROLE ${DB_USER} WITH LOGIN PASSWORD '${DB_PASS}';" >/dev/null
+    psql -c "CREATE ROLE ${DB_USER} WITH LOGIN PASSWORD '${DB_PASS}';" >/dev/null
 else
     echo "User '${DB_USER}' already exists. Updating password..."
-    sudo -u postgres psql -c "ALTER ROLE ${DB_USER} WITH PASSWORD '${DB_PASS}';" >/dev/null
+    psql -c "ALTER ROLE ${DB_USER} WITH PASSWORD '${DB_PASS}';" >/dev/null
 fi
 
 # Grant CONNECT and SCHEMA USAGE in all cases
-sudo -u postgres psql -d "$DB_NAME" -c "GRANT CONNECT ON DATABASE ${DB_NAME} TO ${DB_USER};" >/dev/null
-sudo -u postgres psql -d "$DB_NAME" -c "GRANT USAGE ON SCHEMA public TO ${DB_USER};" >/dev/null
+psql -d "$DB_NAME" -c "GRANT CONNECT ON DATABASE ${DB_NAME} TO ${DB_USER};" >/dev/null
+psql -d "$DB_NAME" -c "GRANT USAGE ON SCHEMA public TO ${DB_USER};" >/dev/null
 
 if [[ "$ACCESS_LEVEL" == "admin" ]]; then
     echo "Ensuring '${DB_USER}' has admin-level privileges on '${DB_NAME}'..."
 
     # Grant all privileges for tables, sequences, functions
-    sudo -u postgres psql -d "$DB_NAME" <<EOF >/dev/null
+    psql -d "$DB_NAME" <<EOF >/dev/null
     GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO ${DB_USER};
     GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO ${DB_USER};
     GRANT ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA public TO ${DB_USER};
@@ -92,7 +92,7 @@ else
     echo "Ensuring '${DB_USER}' has read-only privileges on '${DB_NAME}'..."
 
     # Only grant SELECT for tables
-    sudo -u postgres psql -d "$DB_NAME" <<EOF >/dev/null
+    psql -d "$DB_NAME" <<EOF >/dev/null
     GRANT SELECT ON ALL TABLES IN SCHEMA public TO ${DB_USER};
     ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO ${DB_USER};
 EOF
@@ -101,4 +101,4 @@ echo "User '${DB_USER}' created successfully with ${ACCESS_LEVEL} access to data
 
 # Print all users in the database
 echo "Current users in database '${DB_NAME}':"
-sudo -u postgres psql -d "$DB_NAME" -c "\du"
+psql -d "$DB_NAME" -c "\du"
