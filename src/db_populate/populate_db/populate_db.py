@@ -156,20 +156,13 @@ def load_json_data(file_path):
         sys.exit(1)
 
 def main():
-    try:
-        git_root = subprocess.check_output(
-            ['git', 'rev-parse', '--show-toplevel'],
-            stderr=subprocess.STDOUT
-        ).decode().strip()
-        users_data_dir = os.path.join(git_root, 'datalake', 'users')
-        order_items_data_dir = os.path.join(git_root, 'datalake', 'orders')
-        inventory_data_dir = os.path.join(git_root, 'datalake', 'inventory')
-    except Exception as e:
-        logger.error("Failed retrieving Git top-level.\nDetails:", e)
-        sys.exit(1)
+    root = os.environ.get('PWD')
+    users_data_dir = os.path.join(root, 'datalake', 'users')
+    order_items_data_dir = os.path.join(root, 'datalake', 'orders')
+    inventory_data_dir = os.path.join(root, 'datalake', 'inventory')
 
     logger.info("Loading DB Configuration...")
-    db_config = load_json_data(os.path.join(git_root, 'src', 'init_db', 'db_config.json'))
+    db_config = load_json_data(os.path.join(root, 'db_config.json'))
     
     if not valid_db_config(db_config):
         logger.error("Invalid database configuration. Please check db_config.json.\nExpecting keys: db_admin_user, db_admin_pass, db_host, db_port, db_name")

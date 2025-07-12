@@ -1,2 +1,4 @@
 datalake/**/*.json
 vaultgres.log
+__pycache__
+*.pyc

@@ -9,18 +9,11 @@ from collections import defaultdict
 
 fake = Faker()
 
-# Step 1: Get Git root
-try:
-    git_root = subprocess.check_output(
-        ['git', 'rev-parse', '--show-toplevel'],
-        stderr=subprocess.STDOUT
-    ).decode().strip()
-except Exception as e:
-    print("❌ Error retrieving Git top-level.\nDetails:", e)
-    sys.exit(1)
-
+# Step 1: Get root
+root = os.environ.get('PWD')
+    
 # Step 2: Setup directories
-data_root = os.path.join(git_root, "datalake")
+data_root = os.path.join(root, "datalake")
 users_dir = os.path.join(data_root, "users")
 orders_dir = os.path.join(data_root, "orders")
 inventory_dir = os.path.join(data_root, "inventory")
@@ -29,7 +22,7 @@ try:
     if os.path.exists(data_root):
         shutil.rmtree(data_root)
 except Exception as e:
-    print("❌ Error clearing existing data directory.\nDetails:", e)
+    print("Error clearing existing data directory.\nDetails:", e)
     sys.exit(1)
 
 os.makedirs(users_dir, exist_ok=True)

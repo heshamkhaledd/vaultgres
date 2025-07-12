@@ -1,0 +1,16 @@
+services:
+  db:
+    build: ./src/db_core
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  populator:
+    build: ./src/db_populate
+    depends_on:
+      - db
+volumes:
+  pgdata:

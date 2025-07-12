@@ -1,0 +1,7 @@
+{
+    "db_name": "vaultgres",
+    "db_admin_user": "db_root",
+    "db_admin_pass": "db_root",
+    "db_host": "db",
+    "db_port": 5432
+}
