@@ -2,6 +2,8 @@
 
 **Vaultgres** is a hands-on PostgreSQL administration project simulating a production-ready database environment. It covers user management, security, backup, and recovery, ensuring data integrity and disaster recovery preparedness for real-world applications.
 
+# TESTING POLITE COMMENTS
+
 ## Features
 - Automated database initialization and schema setup
 - User and access management scripts
