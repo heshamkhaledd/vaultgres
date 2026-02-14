@@ -1,16 +1,25 @@
+networks:
+  vaultgres_network:
+    name: vaultgres_network
+
 services:
   db:
     build: ./src/db_core
+    container_name: vaultgres_db
     environment:
       POSTGRES_PASSWORD: postgres
     ports:
       - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
+    networks:
+      - vaultgres_network
 
   populator:
     build: ./src/db_populate
     depends_on:
       - db
+    networks:
+      - vaultgres_network
 volumes:
   pgdata:
